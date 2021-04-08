@@ -1,0 +1,43 @@
+{
+  "name": "@lemii/lisk-manager-plugin",
+  "version": "0.1.0",
+  "description": "A plugin to manage your node using an external client",
+  "author": "lemii <info@lisktools.eu>",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemii/lisk-manager-plugin.git"
+  },
+  "keywords": [
+    "lisk",
+    "blockchain",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=12.13.0 <=12",
+    "npm": ">=6.12.0"
+  },
+  "private": "false",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "diskusage": "^1.1.3",
+    "lisk-sdk": "^5.0.4",
+    "systeminformation": "^4.33.4"
+  },
+  "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/node": "^12.12.11",
+    "rimraf": "^3.0.2",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "4.2.3"
+  }
+}
